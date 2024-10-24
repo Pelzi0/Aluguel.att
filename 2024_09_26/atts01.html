@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Inscrição para o Evento</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div class="form-container">
+        <h1>Inscreva-se para o evento</h1>
+        <form action="#" method="post">
+            <fieldset>
+                <legend>Informações Pessoais</legend>
+                <div class="form-group">
+                    <label for="name">Nome Completo</label>
+                    <input type="text" id="name" name="name" placeholder="Digite seu nome completo" required>
+                </div>
+
+                <div class="form-group">
+                    <label for="email">E-mail</label>
+                    <input type="email" id="email" name="email" placeholder="Digite seu e-mail" required>
+                </div>
+
+                <div class="form-group">
+                    <label for="phone">Telefone</label>
+                    <input type="tel" id="phone" name="phone" placeholder="Digite seu telefone" required>
+                </div>
+            </fieldset>
+
+            <fieldset>
+                <legend>Escolha suas Preferências</legend>
+                <div class="form-group">
+                    <label for="event-type">Tipo de Evento</label>
+                    <select id="event-type" name="event-type" required>
+                        <option value="">Selecione...</option>
+                        <option value="conferencia">Conferência</option>
+                        <option value="workshop">Workshop</option>
+                        <option value="seminario">Seminário</option>
+                    </select>
+                </div>
+
+                <div class="form-group">
+                    <label>Preferências Alimentares</label>
+                    <div class="checkbox-group">
+                        <div class="checkbox-item">
+                            <label for="vegetariano">Vegetariano</label>
+                            <input type="checkbox" id="vegetariano" name="preferencias[]" value="Vegetariano">
+                        </div>
+                        <div class="checkbox-item">
+                            <label for="vegano">Vegano</label>
+                            <input type="checkbox" id="vegano" name="preferencias[]" value="Vegano">
+                        </div>
+                        <div class="checkbox-item">
+                            <label for="sem-gluten">Sem Glúten</label>
+                            <input type="checkbox" id="sem-gluten" name="preferencias[]" value="Sem Glúten">
+                        </div>
+                        <div class="checkbox-item">
+                            <label for="carnivoro">Carnívoro</label>
+                            <input type="checkbox" id="carnivoro" name="preferencias[]" value="Carnívoro">
+                        </div>
+                    </div>
+            </fieldset>
+
+            <fieldset>
+                <legend>Comentários e Preferências Adicionais</legend>
+                <div class="form-group">
+                    <label for="comments">Comentários</label>
+                    <textarea id="comments" name="comments" rows="4" placeholder="Deixe seus comentários ou preferências aqui"></textarea>
+                </div>
+            </fieldset>
+
+            <button type="submit">Enviar Inscrição</button>
+        </form>
+    </div>
+</body>
+</html>
